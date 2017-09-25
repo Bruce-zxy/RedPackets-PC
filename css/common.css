@@ -1,0 +1,61 @@
+/* common */
+html,body { min-width: 1440px;background-color: #fff; overflow: auto; width: 100%; font-size: 12px}
+.d_none { display: none!important }
+.d_block { display: block; }
+.d_inline_block { display: inline-block; }
+.d_flex { /* Safari */ display: -ms-flexbox; display: flex; }
+.f_none { float: none!important; }
+.f_left { float: left; }
+.f_right { float: right; }
+.nav_background { background-color: rgba(255, 255, 255, .9); }
+.text-blue { color: #126fd9!important; }
+
+/* header start */
+.header { height: 60px; min-width: 1440px; width: 100%; position: fixed; top: 0; z-index: 999; background-color: rgba(255, 255, 255, 1); box-shadow: 0px 1px 1px #e1e1e1 }
+.header .nav { width: 880px; margin: 0 auto; height: 60px; position: relative; display: block!important; }
+.header .nav li { display: inline-block; height: 60px; padding: 0; }
+.header .nav li a { display: block; line-height: 40px; padding: 9px 0; font-size: 14px; color: #666; border-bottom: 2px solid transparent; }
+.header .nav li:hover a { color: rgba(218, 54, 54, 1); /*border-bottom: 2px solid rgba(218, 54, 54, 1);*/ }
+.header .nav li.active a { font-weight: normal; color: rgba(218, 54, 54, 1); /*border-bottom: 2px solid rgba(218, 54, 54, 1);*/ }
+.header .nav li.login { margin:0 20px 0 40px; }
+.header .nav li.signin { margin: 0 20px; }
+.header .nav .signin:after { content: ''; position: relative; top: -40px; left: -50px; display: inline-block; border-left: 2px solid #333; height: 18px; }
+.header .nav li.link { margin: 0 30px; }
+.header .nav .nav-head { padding: 0; border-bottom: none !important; }
+.header .nav-head img { height: 100%; padding: 8px; }
+.header .nav-head span { height: 20px; line-height: 10px; font-size: 16px; text-align: left; font-family: "Microsoft YaHei", "simsun", "Helvetica Neue", Arial, Helvetica, sans-serif; }
+.header .nav-head div { height: 50px; padding: 10px 0; }
+.header .nav-head .text-small { font-size: 12px; font-weight: 200; }
+.header .icon-navicon { border: none; }
+.header .icon-navicon:hover { background-color: transparent; }
+.header .nav_background li { margin: 0!important; }
+/* header end */
+
+/* login start */
+.login_mask { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .8) }
+.login_mask .login_body, .login_mask .signin_body { position: absolute; top: 50%; left: 50%; z-index: 999; margin-top: -242px; margin-left: -275px }
+.login_mask .panel { background-color: #fff }
+.login_mask .text-center { position: relative }
+.login_mask .text-center img { width: 60px; height: 60px; margin: 0 auto }
+.login_mask .text-center .close { position: absolute; right: 0; top: 0 }
+.login_mask .form_h { height: 60px }
+.login_mask .form_h input { height: 40px }
+.login_mask .form_m { margin-top: 20px }
+.login_mask .passcode { position: absolute; right: 0; top: 0; width: 120px; height: 40px; color: #999; margin: 0; border-left: solid 1px #ddd; text-align: center; border-radius: 0 4px 4px 0; background-color: #ECECEC }
+.login_mask .login_body p a { display: inline-block; width: 40%; }
+.login_mask .panel button.bg-black { background-color: #ec4346; color: #e1e1e1; border-color: #ec4346; }
+/* login end */
+
+/* footer start */
+.footer { width: 100%; min-width: 1440px; color: #333; background: url('../img/footer-bg.png'); padding: 40px 0; }
+.footer div { width: 880px; margin: 0 auto; text-align: center; }
+.footer a { display: inline-block; margin: 0 20px; color: #333; }
+/* footer end */
+
+/*自定义*白烟*文本/边框/背景色*/
+.text-whitesmoke,a.text-whitesmoke:link,a.text-whitesmoke:visited,.button.border-whitesmoke,blockquote.border-whitesmoke,.pager.border-whitesmoke a,.pager-prev.border-whitesmoke,.pager-next.border-whitesmoke {	color: #f5f5f5;}
+.border-whitesmoke,.border-whitesmoke .button,.border-whitesmoke .tab-nav li a,.border-whitesmoke .tab-body,.button.bg-whitesmoke,.selected.border-whitesmoke,.pointer.border-whitesmoke li,.nav.border-whitesmoke .active a,.nav.nav-tabs.border-whitesmoke,.nav-main.border-whitesmoke a,.nav-main.border-whitesmoke .nav-head,.pagination.border-whitesmoke li,.pager.border-whitesmoke a {	border-color: #f5f5f5;}
+.bg-whitesmoke,.border-whitesmoke .button.active,.pointer.border-whitesmoke .active,.nav-pills.border-whitesmoke .active a,.nav-whitesmoke.border-whitesmoke .nav-head,.pagination.border-whitesmoke .active {	background-color: #f5f5f5;}
+
+@media(max-width:760px){.login_mask .login_body,.login_mask .signin_body{width:80%!important}.login_mask .panel{width:100%!important}}
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------分------割------线------>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="Author" content="Bruce Zhu">
+    <title>红包页面</title>
+    <style>
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+li {
+	list-style: decimal
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	color: #00BCE3;
+}
+div {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+iframe {
+	width: 100%;
+	height: 100%;
+}
+#menu {
+	position: fixed;
+	left: 0;
+	z-index: 99;
+	background-color: rgba(255, 255, 255, .9);
+	width: 180px;
+	height: 100%;
+	font-size: 14px;
+	box-shadow: 1px 0 5px #ccc;
+	text-align: right;
+}
+#menu ul {
+	text-align: left;
+}
+.hidden {
+	left: -178px!important;
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
+}
+.hidden:hover {
+	left: 0!important;
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
+}
+    </style>
+    <script>
+    	function browserRedirect() {
+    	    var sUserAgent = navigator.userAgent.toLowerCase();
+    	    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    	    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    	    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    	    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    	    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    	    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    	    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    	    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    	    if ((bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+    	        window.location.href='./tips.html';
+    	    }
+    	}
+    	browserRedirect();
+    </script>
+
+</head>
+<!------分------割------线------>
+
+<body>
+
+	<div id="menu">
+		<span class="hide" style="display: block; color: #126e9d; margin: 20px; cursor: pointer;" onclick="change(this)">点击隐藏</span>
+		<ul>
+			<li><a href="javascript:;" name="首页">首页</a></li>
+			<li><a href="javascript:;" name="关于我们">关于我们</a></li>
+			<span style="display: block; color: #eb1e1e; margin: 10px 0;">第一部分</span>
+			<li><a href="javascript:;" name="开通条件">开通条件</a></li>
+			<li><a href="javascript:;" name="申请服务">申请服务</a></li>
+			<li><a href="javascript:;" name="红包使用">红包使用</a></li>
+			<span style="display: block; color: #eb1e1e; margin: 10px 0;">第二部分</span>
+			<li><a href="javascript:;" name="场景选择">场景选择</a></li>
+			<li><a href="javascript:;" name="确认支付">确认支付</a></li>
+			<li><a href="javascript:;" name="模板选择">模板选择</a></li>
+			<li><a href="javascript:;" name="授权信息">授权信息</a></li>
+			<li><a href="javascript:;" name="线上预览（横）">线上预览（横）</a></li>
+			<li><a href="javascript:;" name="线上预览（竖）">线上预览（竖）</a></li>
+			<li><a href="javascript:;" name="线下预览（横）">线下预览（横）</a></li>
+			<li><a href="javascript:;" name="线下预览（竖）">线下预览（竖）</a></li>
+			<li><a href="javascript:;" name="订单状态">订单状态</a></li>
+			<li><a href="javascript:;" name="红包详情">红包详情</a></li>
+			<span style="display: block; color: #eb1e1e; margin: 10px 0;">第三部分</span>
+			<li><a href="javascript:;" name="用户注册">用户注册</a></li>
+		</ul>
+	</div>
+	<div>
+		<iframe id="display" src="./首页.html" frameborder="0"></iframe>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	function getId(arg) { return document.getElementById(arg); }
+	var lists = document.querySelectorAll('a')
+	for (i in lists) {
+		if (lists.hasOwnProperty(i)) {
+			lists[i].onclick = function () {
+				document.getElementById('display').src = './'+this.innerHTML+'.html';
+			}
+		}
+	}
+	function change(arg) {
+		if (arg.innerHTML === '点击隐藏') {
+			arg.innerHTML = '点击固定';
+			getId('menu').classList.add('hidden');
+			arg.classList.remove('hide');
+			arg.classList.add('block');
+
+		} else if (arg.innerHTML === '点击固定') {
+			console.log(arg);
+			arg.innerHTML = '点击隐藏';
+			getId('menu').classList.remove('hidden');
+			console.log(arg);
+			arg.classList.remove('block');
+			arg.classList.add('hide');
+		}
+	}
+
+</script>
+<!------分------割------线------>
+</html>
