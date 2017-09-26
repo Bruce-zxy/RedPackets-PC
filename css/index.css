@@ -29,11 +29,11 @@
 /*user_signin start*/
 .user_signin { height: 650px; margin: 80px auto 0;  padding: 15px; border: 1px solid #ccc; }
 .user_content { text-align: center; }
-.user_content a { display: inline-block; padding: 5px 15px; margin: 15px 5px 0; border-radius: 6px; }
+.user_content a { display: inline-block; padding: 5px 15px; margin: 45px 5px 0; border-radius: 6px; }
 .user_title { font-size: 14px; height: 30px; }
 .user_title img { float: left; height: 100%; display: inline-block; padding: 5px; margin-right: 10px; }
 .user_title span { float: left; display: inline-block; line-height: 30px; }
-.user_text { height: 450px; border: 1px solid #ccc; padding: 15px; text-align: left; overflow-y: scroll; overflow-x: hidden; }
+.user_text { height: 470px; border: 1px solid #ccc; padding: 15px; text-align: left; overflow-y: scroll; overflow-x: hidden; }
 .user_text p:first-child { text-align: center; }
 /*user_signin end*/
 
