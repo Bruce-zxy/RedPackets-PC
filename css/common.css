@@ -9,6 +9,7 @@ html,body { min-width: 1440px;background-color: #fff; overflow: auto; width: 100
 .f_right { float: right; }
 .nav_background { background-color: rgba(255, 255, 255, .9); }
 .text-blue { color: #126fd9!important; }
+.label label { font-weight: normal }
 
 /* header start */
 .header { height: 60px; min-width: 1440px; width: 100%; position: fixed; top: 0; z-index: 999; background-color: rgba(255, 255, 255, 1); box-shadow: 0px 1px 1px #e1e1e1 }

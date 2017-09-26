@@ -147,12 +147,12 @@ div.order_name { height: 1000px }
 .card_choice .active .offline-black { background-image: url(../img/icons/icon-service5-white.png); }
 .choose_sense .sense_range { padding: 15px 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
 .choose_sense .sense_range .input-group { margin-right: 30px; }
-.choose_sense .sense_range .label { width: 30%!important; padding-right: 40px; }
-.choose_sense .sense_range .field { width: 70%; }
+.choose_sense .sense_range .label { width: 190px!important; padding-right: 20px; }
+.choose_sense .sense_range .field { width: 560px; padding: 3px 0; }
 .choose_sense .sense_range .field i { display: inline-block; border-top: 2px solid #333; width: 10px; position: relative; top: -12px; left: -15px; }
 .choose_sense .sense_range .field>span { float: none; position: relative; top: -10px; left: -30px }
-.choose_sense .sense_range .field .tips { top: -10px; left: -22px; font-size: 12px; font-weight: 600 }
-.choose_sense .input { height: 27px; }
+.choose_sense .sense_range .field .tips { top: -10px; left: -24px; font-size: 12px; font-weight: 600 }
+.choose_sense .input { height: 26px; }
 .choose_sense .addon { cursor: pointer; width: 35px; }
 .choose_sense .sense_range .form-x>p { padding: 0 80px; }
 .choose_sense .text-red { float: none; margin: 0 5px; }
@@ -166,6 +166,7 @@ div.order_name { height: 1000px }
 .choose_sense .sense_count .taocan span.next { width: 210px; }
 .choose_sense .sense_count .taocan .active { border: 1px solid #3d8cf7; }
 .choose_sense .sense_count .taocan .text span { height: 35px; line-height: 35px; }
+.choose_sense .sense_count .taocan .active span { color: #3d8cf7; }
 .choose_sense .sense_count .taocan i { display: inline-block; float: left; width: 25px; height: 25px; margin: 4px 10px; background-position: 25px 0; background-image: url('../img/icons/taocan.png'); }
 .choose_sense .sense_count .active i { background-position: 0 0; }
 .choose_sense .sum_price p { text-align: right; }
