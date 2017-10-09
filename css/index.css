@@ -146,13 +146,13 @@ div.order_name { height: 1000px }
 .card_choice a:hover .offline-black { background-image: url(../img/icons/icon-service5-white.png); }
 .card_choice .active .offline-black { background-image: url(../img/icons/icon-service5-white.png); }
 .choose_sense .sense_range { padding: 15px 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
-.choose_sense .sense_range .input-group { margin-right: 30px; }
+.choose_sense .sense_range .input-group { margin-right: 30px; font-size: 14px;}
 .choose_sense .sense_range .label { width: 190px!important; padding-right: 20px; }
-.choose_sense .sense_range .field { width: 560px; padding: 3px 0; }
+.choose_sense .sense_range .field { width: 560px; padding: 3px 0; font-size: 0px; }
 .choose_sense .sense_range .field i { display: inline-block; border-top: 2px solid #333; width: 10px; position: relative; top: -12px; left: -15px; }
 .choose_sense .sense_range .field>span { float: none; position: relative; top: -10px; left: -30px }
 .choose_sense .sense_range .field .tips { top: -10px; left: -24px; font-size: 12px; font-weight: 600 }
-.choose_sense .input { height: 26px; }
+.choose_sense .input { height: 27px; }
 .choose_sense .addon { cursor: pointer; width: 35px; }
 .choose_sense .sense_range .form-x>p { padding: 0 80px; }
 .choose_sense .text-red { float: none; margin: 0 5px; }
