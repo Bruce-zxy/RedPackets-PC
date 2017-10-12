@@ -344,4 +344,14 @@ p.p_high { font-size: 14px; height: auto; line-height: 20px; line-height: 20px; 
 #intro_3 .hbsy { float: left; width: 760px; padding-left: 20px; }
 /*红包使用 end*/
 
+/*授权分类 start*/
+.auth_classify { height: 700px; margin-top: 60px; position: relative; }
+.auth_classify .title_l { position: absolute; top: 130px; z-index: 10; }
+.auth_classify .title_l p:first-child { font-family: 'AdobeHeitiStd-Regular'; font-size: 29px; color: #333; margin-bottom: 20px; }
+.auth_classify .title_l b { display: block; background-color: #333; width: 29px; height: 2px; }
+.auth_classify .t_red { background: #EC4346; }
+.auth_classify .t_gary { background: #989898; }
+.auth_classify .title_l a { display: inline-block; width: 210px; height: 55px; line-height: 55px; font-family: 'AdobeHeitiStd-Regular'; font-size: 16px; color: #fff; text-align: center; margin: 30px 40px 0 0; border-radius: 5px; }
+.auth_classify img { position: absolute; top: 172px; left: 298px; }
+/*授权分类 end*/
 
